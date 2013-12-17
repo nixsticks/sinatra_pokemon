@@ -1,0 +1,19 @@
+INTRO PAGE
+
+first intros flash
+maybe get the player's name.
+oak should be at the left.
+six slots for pokemon.
+once intro is done, oak will ask you which starter pokemon you want
+click on one and it will appear in your leftmost slot
+then he gives you five bonus pokemon. one by one they appear in the slots
+then he asks if you want to try out your team against a random pokemon from his team
+takes you to the battle screen
+
+
+BATTLE PAGE
+
+top slot describes what is happening
+two slots one for each pokemon
+slots above are HP
+slot below your pokemon allows you to click on a move (make this a form)

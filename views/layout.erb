@@ -1,11 +1,30 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="/styles/base.css">
+  <link rel="stylesheet" type="text/css" href="/styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="/styles/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="/styles/custom.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>
+   $(document).ready(function() {
+    function loadNext() {
+      $("#intro").load("intro?randval="+ Math.random(), function() {
+        setTimeout(loadNext, 2000);
+      });
+    }
+   loadNext();
+  });
+  </script>
+
   <title>
     GOTTA CATCH 'EM ALL!
   </title>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
