@@ -5,19 +5,19 @@
 
   <div class="four columns">
     <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= @choices[0] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[0] %>.png"></button>
+      <input type="hidden" name="0" value="<%= locals[:one] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:one] %>.png"></button>
     </form>
   </div>
 
   <div class="four columns">
     <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= @choices[1] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[1] %>.png"></button>
+      <input type="hidden" name="0" value="<%= locals[:two] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:two] %>.png"></button>
     </form>
   </div>
 
   <div class="four columns">
     <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= @choices[2] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[2] %>.png"></button>
+      <input type="hidden" name="0" value="<%= locals[:three] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:three] %>.png"></button>
     </form>
   </div>
 

@@ -9,19 +9,21 @@ module PokemonGame
   class App < Sinatra::Application
     set :line, 0
     set :player, "Ash"
-    set :starters, ["Bulbasaur", "Squirtle", "Charmander"]
+    set :pokemon, YAML::load(File.open('./lib/pokedex.yaml'))
+    set :trainer, Trainer.new
+    set :opponents, []
+    set :opponent, nil
 
-    configure do
-      @@pokemon = YAML::load(File.open('./lib/pokedex.yaml'))
-      @@trainer = Trainer.new
-      @@opponents = []
-      @@opponent = nil
-    end
+    # configure do
+    #   settings.pokemon = YAML::load(File.open('./lib/pokedex.yaml'))
+    #   settings.trainer = Trainer.new
+    #   settings.opponents = []
+    #   settings.opponent = nil
+    # end
 
     get '/' do
       @reload = true
       @inner = "intro"
-      @image = "oak"
       erb :index
     end
 
@@ -32,7 +34,6 @@ module PokemonGame
     get '/starters' do
       @reload = true
       @inner = "starters_inner"
-      @images = settings.starters
       erb :starters
     end
 
@@ -41,15 +42,13 @@ module PokemonGame
     end
 
     get '/choose_starter' do
-      @choices = settings.starters
       @action = "next"
       erb :choose_starter
     end
 
     post '/next' do
-      @@trainer.my_pokemon[0] = @@pokemon.detect {|pokemon| pokemon.name == params["0"]}
-      @trainer = @@trainer
-      @image = @trainer.my_pokemon[0].name
+      settings.trainer.my_pokemon[0] = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
+      @trainer = settings.trainer
       @text = "You chose #{@trainer.my_pokemon[0].name}!"
       erb :next
     end
@@ -62,7 +61,7 @@ module PokemonGame
 
     get '/team_inner' do
       team = []
-      5.times { team << @@pokemon.sample }
+      5.times { team << settings.pokemon.sample }
 
       @line = team[settings.line].name
 
@@ -80,10 +79,9 @@ module PokemonGame
       @reload = true
       @inner = "battle_inner"
 
-      3.times { @@opponents << @@pokemon.sample }
+      3.times { settings.opponents << settings.pokemon.sample }
 
-      @opponents = @@opponents
-      @images = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
+      @opponents = settings.opponents
 
       erb :battle
     end
@@ -93,29 +91,32 @@ module PokemonGame
     end
 
     get '/choose_opponent' do
-      @opponents = @@opponents
-      @choices = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
+      @opponents = settings.opponents
       @action = "opponent"
       erb :choose_opponent
     end
 
     post '/opponent' do
-      @@opponent = @@pokemon.detect {|pokemon| pokemon.name == params["0"]}
-      @opponent = @@opponent
-      @image = @opponent.name
+      settings.opponent = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
+      @opponent = settings.opponent
       @text = "You chose #{@opponent.name}, a ferocious #{@opponent.type} Pokemon!"
       erb :opponent
     end
 
     get '/first_fight' do
-      @trainer = @@trainer
-      @opponent = @@opponent
+      @trainer = settings.trainer
+      @opponent = settings.opponent
       erb :first_fight
     end
 
     helpers do
       def simple_partial(template)
         erb template
+      end
+
+      def intermediate_partial(template, locals=nil)
+        locals = locals.is_a?(Hash) ? locals : {template => locals}
+        erb template, {}, locals        
       end
 
       def get_lines(file)
