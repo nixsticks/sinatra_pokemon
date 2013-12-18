@@ -71,7 +71,7 @@ module PokemonGame
     get '/choose_opponent' do
       @opponents = settings.opponents
       @action = "opponent"
-      @images = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
+      @choices = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
       erb :threebuttons
     end
 
