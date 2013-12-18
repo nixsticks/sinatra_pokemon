@@ -3,23 +3,13 @@
     <p> </p>
   </div>
 
-  <div class="four columns">
-    <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= locals[:one] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:one] %>.png"></button>
-    </form>
-  </div>
-
-  <div class="four columns">
-    <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= locals[:two] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:two] %>.png"></button>
-    </form>
-  </div>
-
-  <div class="four columns">
-    <form action="/<%= @action %>" method="POST">
-      <input type="hidden" name="0" value="<%= locals[:three] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= locals[:three] %>.png"></button>
-    </form>
-  </div>
+  <% 3.times do |i| %>
+    <div class="four columns">
+      <form action="/<%= @action %>" method="POST">
+        <input type="hidden" name="0" value="<%= @choices[i] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[i] %>.png"></button>
+      </form>
+    </div>
+  <% end %>
 
   <div class="four columns">
     <p> </p>

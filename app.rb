@@ -13,18 +13,13 @@ module PokemonGame
     set :trainer, Trainer.new
     set :opponents, []
     set :opponent, nil
-
-    # configure do
-    #   settings.pokemon = YAML::load(File.open('./lib/pokedex.yaml'))
-    #   settings.trainer = Trainer.new
-    #   settings.opponents = []
-    #   settings.opponent = nil
-    # end
+    set :starters, ["Bulbasaur", "Squirtle", "Charmander"]
 
     get '/' do
       @reload = true
       @inner = "intro"
-      erb :index
+      @image = "oak"
+      erb :oneimage
     end
 
     get '/intro' do
@@ -34,7 +29,8 @@ module PokemonGame
     get '/starters' do
       @reload = true
       @inner = "starters_inner"
-      erb :starters
+      @images = settings.starters
+      erb :threeimages
     end
 
     get '/starters_inner' do
@@ -42,37 +38,18 @@ module PokemonGame
     end
 
     get '/choose_starter' do
-      @action = "next"
-      erb :choose_starter
+      @action = "starter"
+      @choices = settings.starters
+      erb :threebuttons
     end
 
-    post '/next' do
+    post '/starter' do
       settings.trainer.my_pokemon[0] = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
       @trainer = settings.trainer
       @text = "You chose #{@trainer.my_pokemon[0].name}!"
-      erb :next
-    end
-
-    get '/team' do
-      @reload = true
-      @inner = "team_inner"
-      erb :team
-    end
-
-    get '/team_inner' do
-      team = []
-      5.times { team << settings.pokemon.sample }
-
-      @line = team[settings.line].name
-
-      if @line
-        settings.line = 0
-        @redirect = redirect('battle')
-      else
-        settings.line += 1
-        erb :inner, :layout => false
-      end
-      # random sample of pokemon make them appear slowly
+      @image = @trainer.my_pokemon[0].name
+      @redirect = redirect('battle', 4000)
+      erb :oneimage
     end
 
     get '/battle' do
@@ -82,8 +59,9 @@ module PokemonGame
       3.times { settings.opponents << settings.pokemon.sample }
 
       @opponents = settings.opponents
+      @images = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
 
-      erb :battle
+      erb :threeimages
     end
 
     get '/battle_inner' do
@@ -93,14 +71,16 @@ module PokemonGame
     get '/choose_opponent' do
       @opponents = settings.opponents
       @action = "opponent"
-      erb :choose_opponent
+      @images = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
+      erb :threebuttons
     end
 
     post '/opponent' do
       settings.opponent = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
       @opponent = settings.opponent
       @text = "You chose #{@opponent.name}, a ferocious #{@opponent.type} Pokemon!"
-      erb :opponent
+      @image = @opponent.name
+      erb :oneimage
     end
 
     get '/first_fight' do
@@ -114,18 +94,13 @@ module PokemonGame
         erb template
       end
 
-      def intermediate_partial(template, locals=nil)
-        locals = locals.is_a?(Hash) ? locals : {template => locals}
-        erb template, {}, locals        
-      end
-
       def get_lines(file)
         lines = File.open("./lib/#{file}") {|file| file.readlines.map {|line| line.chomp}}
       end
 
-      def redirect(url)
-        "<script type='text/javascript'>
-         window.location.assign('/#{url}')
+      def redirect(url, time)
+        "<script>
+          setTimeout(\"window.location.href='/battle';\", 4000);
         </script>"
       end
 
@@ -135,7 +110,7 @@ module PokemonGame
 
         if settings.line == lines.size
           settings.line = 0
-          @redirect = redirect(redirect_page)
+          @redirect = redirect(redirect_page, 0)
         else
           settings.line += 1
           erb inner_view, :layout => false
