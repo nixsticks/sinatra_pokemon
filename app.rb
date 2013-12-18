@@ -48,7 +48,7 @@ module PokemonGame
       @trainer = settings.trainer
       @text = "You chose #{@trainer.my_pokemon[0].name}!"
       @image = @trainer.my_pokemon[0].name
-      @redirect = redirect('battle', 4000)
+      @redirect = timed_redirect('battle', 4000)
       erb :oneimage
     end
 
@@ -80,6 +80,7 @@ module PokemonGame
       @opponent = settings.opponent
       @text = "You chose #{@opponent.name}, a ferocious #{@opponent.type} Pokemon!"
       @image = @opponent.name
+      @redirect = timed_redirect("first_fight", 4000)
       erb :oneimage
     end
 
@@ -98,9 +99,15 @@ module PokemonGame
         lines = File.open("./lib/#{file}") {|file| file.readlines.map {|line| line.chomp}}
       end
 
-      def redirect(url, time)
+      def redirect(url)
+        "<script type='text/javascript'>
+           window.location.assign('/#{url}')
+        </script>"
+      end
+
+      def timed_redirect(url, time)
         "<script>
-          setTimeout(\"window.location.href='/#{url}';\", 4000);
+          setTimeout(\"window.location.href='/#{url}';\", #{time});
         </script>"
       end
 
@@ -110,7 +117,7 @@ module PokemonGame
 
         if settings.line == lines.size
           settings.line = 0
-          @redirect = redirect(redirect_page, 0)
+          @redirect = redirect(redirect_page)
         else
           settings.line += 1
           erb inner_view, :layout => false
