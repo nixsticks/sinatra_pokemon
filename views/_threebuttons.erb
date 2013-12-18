@@ -1,0 +1,27 @@
+<div class="image-container">
+  <div class="two columns">
+    <p> </p>
+  </div>
+
+  <div class="four columns">
+    <form action="/<%= @action %>" method="POST">
+      <input type="hidden" name="0" value="<%= @choices[0] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[0] %>.png"></button>
+    </form>
+  </div>
+
+  <div class="four columns">
+    <form action="/<%= @action %>" method="POST">
+      <input type="hidden" name="0" value="<%= @choices[1] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[1] %>.png"></button>
+    </form>
+  </div>
+
+  <div class="four columns">
+    <form action="/<%= @action %>" method="POST">
+      <input type="hidden" name="0" value="<%= @choices[2] %>"><button type="submit" value="submit"><img class="pokemon" src="/images/<%= @choices[2] %>.png"></button>
+    </form>
+  </div>
+
+  <div class="four columns">
+    <p> </p>
+  </div>
+</div>

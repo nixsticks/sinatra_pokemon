@@ -2,30 +2,6 @@
   setTimeout("window.location.href='/battle';", 4000);
 </script>
 
-<div class="intro-container">
-  <div class="two columns">
-    <p> </p>
-  </div>
+<%= simple_partial :_text %>
 
-  <div id="intro" class="twelve columns inner">
-    <h2>You chose <%= @trainer.my_pokemon[0].name %>!</h2>
-  </div>
-
-  <div class="two columns">
-    <p> </p>
-  </div>
-</div>
-
-<div class="image-container">
-  <div class="five columns">
-    <p> </p>
-  </div>
-
-  <div class="six columns">
-    <img class="pokemon" src="/images/<%= @trainer.my_pokemon[0].name %>.png">
-  </div>
-
-  <div class="five columns">
-    <p> </p>
-  </div>
-</div>
+<%= simple_partial :_oneimage %>
