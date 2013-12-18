@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'open-uri'
-require 'awesome_print'
 
 class Scraper
   attr_reader :html
@@ -47,4 +46,11 @@ class Scraper
   def get_type
     html.search('//a[contains(@title, "(type)")]/span')[0].text
   end
+
+  def get_image
+    html.search("//img[contains(@alt, \"#{get_name}\")]")[0]['src']
+  end
 end
+
+scraper = Scraper.new("http://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)")
+image = scraper.get_image

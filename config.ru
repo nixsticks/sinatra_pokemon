@@ -1,3 +1,3 @@
 require './app'
 
-run Pokemon::App.new
+run PokemonGame::App.new

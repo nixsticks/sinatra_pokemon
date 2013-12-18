@@ -1,5 +1,5 @@
 class Pokemon
-  attr_reader :type, :learnset, :moves
+  attr_reader :type, :learnset, :moves, :name
   attr_writer :name, :level, :moves, :evolution
 
   def initialize(name, type, learnset, base_stats, evolution)

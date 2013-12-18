@@ -1,0 +1,12 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+  function loadNext() {
+    $("#intro").load("<%= @inner %>?randval="+ Math.random(), function() {
+      setTimeout(loadNext, 2000);
+    });
+  }
+   loadNext();
+  });
+</script>

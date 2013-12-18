@@ -1,0 +1,10 @@
+I will give you one Pokemon
+to start out your journey with.
+
+Do you want Bulbasaur (grass)?
+
+Do you want Squirtle (water)?
+
+Or do you want Charmander(fire)?
+
+Choose one.

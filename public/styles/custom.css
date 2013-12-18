@@ -2,6 +2,10 @@ h2 {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 #intro {
   min-height: 60px;
   text-align: center;
@@ -13,12 +17,12 @@ h2 {
   width: 100%;
 }
 
-.image-container {
-  padding-top: 30px;
-}
-
 .intro-container {
   margin-top: 100px;
+}
+
+.image-container {
+  margin-top: 30px;
 }
 
 .image {
@@ -26,3 +30,61 @@ h2 {
   height: 300px;
   width: auto;
 }
+
+.pokemon {
+  text-align: center;
+  height: 300px;
+  width: auto;
+}
+
+.button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    background: none;
+    display: inline-block;
+    position: relative;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: normal;
+    padding: 8px 10px;
+    border: 0;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    top: -5px;
+  }
+
+  .button:active,
+  button:active,
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active {
+    border: 0;
+  }
+
+  .button.full-width,
+  button.full-width,
+  input[type="submit"].full-width,
+  input[type="reset"].full-width,
+  input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center; }
+
+  /* Fix for odd Mozilla border & padding issues */
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
