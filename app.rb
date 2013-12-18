@@ -100,7 +100,7 @@ module PokemonGame
 
       def redirect(url, time)
         "<script>
-          setTimeout(\"window.location.href='/battle';\", 4000);
+          setTimeout(\"window.location.href='/#{url}';\", 4000);
         </script>"
       end
 
