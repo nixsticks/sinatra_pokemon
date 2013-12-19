@@ -1,4 +1,5 @@
 require_relative 'scraper'
+require 'yaml'
 
 module PokemonFactory
   def save_images
@@ -105,8 +106,14 @@ module PokemonFactory
       file.puts YAML::dump(pokemons)
     end
   end
+
+  def move_list
+    File.open("movelist.yaml", "w") do |file|
+      file.puts YAML::dump(Scraper.new("http://bulbapedia.bulbagarden.net/wiki/List_of_moves_that_do_damage").get_moves)
+    end
+  end
 end
 
 include PokemonFactory
 
-save_images
+move_list

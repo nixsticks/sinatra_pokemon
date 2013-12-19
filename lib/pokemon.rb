@@ -32,6 +32,10 @@ class Pokemon
     end
   end
 
+  def defend(move)
+    hp -= move.use
+  end
+
   def evolve?
     level == evolution.values.first
   end

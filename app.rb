@@ -7,15 +7,17 @@ require_relative './lib/pokemon'
 
 module PokemonGame
   class App < Sinatra::Application
-    set :line, 0
-    set :player, "Ash"
+    enable :sessions
+
+    set :session_secret, 'super secret'
     set :pokemon, YAML::load(File.open('./lib/pokedex.yaml'))
-    set :trainer, Trainer.new
-    set :opponents, []
-    set :opponent, nil
     set :starters, ["Bulbasaur", "Squirtle", "Charmander"]
 
     get '/' do
+      session[:line] = 0
+      session[:trainer] = Trainer.new
+      session[:opponents] = []
+      session[:opponent] = nil
       @reload = true
       @inner = "intro"
       @image = "oak"
@@ -44,8 +46,8 @@ module PokemonGame
     end
 
     post '/starter' do
-      settings.trainer.my_pokemon[0] = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
-      @trainer = settings.trainer
+      session[:trainer].my_pokemon[0] = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
+      @trainer = session[:trainer]
       @text = "You chose #{@trainer.my_pokemon[0].name}!"
       @image = @trainer.my_pokemon[0].name
       @redirect = timed_redirect('battle', 4000)
@@ -56,9 +58,9 @@ module PokemonGame
       @reload = true
       @inner = "battle_inner"
 
-      3.times { settings.opponents << settings.pokemon.sample }
+      3.times { session[:opponents] << settings.pokemon.sample }
 
-      @opponents = settings.opponents
+      @opponents = session[:opponents]
       @images = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
 
       erb :threeimages
@@ -69,15 +71,15 @@ module PokemonGame
     end
 
     get '/choose_opponent' do
-      @opponents = settings.opponents
+      @opponents = session[:opponents]
       @action = "opponent"
       @choices = [@opponents[0].name, @opponents[1].name, @opponents[2].name]
       erb :threebuttons
     end
 
     post '/opponent' do
-      settings.opponent = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
-      @opponent = settings.opponent
+      session[:opponent] = settings.pokemon.detect {|pokemon| pokemon.name == params["0"]}
+      @opponent = session[:opponent]
       @text = "You chose #{@opponent.name}, a ferocious #{@opponent.type} Pokemon!"
       @image = @opponent.name
       @redirect = timed_redirect("first_fight", 4000)
@@ -85,9 +87,9 @@ module PokemonGame
     end
 
     get '/first_fight' do
-      @trainer = settings.trainer
-      @opponent = settings.opponent
-      erb :first_fight
+      @trainer = session[:trainer]
+      @opponent = session[:opponent]
+      erb :fight
     end
 
     helpers do
@@ -113,13 +115,13 @@ module PokemonGame
 
       def reloader(text_file, redirect_page, inner_view)
         lines = get_lines(text_file)
-        @line = lines[settings.line]
+        @line = lines[session[:line]]
 
-        if settings.line == lines.size
-          settings.line = 0
+        if session[:line] == lines.size
+          session[:line] = 0
           @redirect = redirect(redirect_page)
         else
-          settings.line += 1
+          session[:line] += 1
           erb inner_view, :layout => false
         end
       end

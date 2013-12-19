@@ -50,7 +50,26 @@ class Scraper
   def get_image
     html.search("//img[contains(@alt, \"#{get_name}\")]")[0]['src']
   end
-end
 
-scraper = Scraper.new("http://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)")
-image = scraper.get_image
+  def get_moves
+    move_list = {}
+
+    moves = html.search('//td[1]').map {|move| move.text.gsub(/\n|^\s/, "")}
+    moves.delete(moves.first)
+    moves.delete(moves.last)
+    types = html.search('//td[2]').map {|stat| stat.text.gsub(/\n|^\s/, "")}
+    categories = html.search('//td[3]').map {|stat| stat.text.gsub(/\n|^\s/, "")}
+    powers = html.search('//td[4]').map {|stat| stat.text.gsub(/\s/, "").gsub("—", "special")}
+    accuracies = html.search('//td[5]').map {|stat| stat.text.gsub(/[\s\%]/, "").gsub("—", "special")}
+
+    moves.size.times do |i|
+      move_list[moves[i]] = {}
+      move_list[moves[i]][:type] = types[i]
+      move_list[moves[i]][:category] = categories[i]
+      move_list[moves[i]][:power] = powers[i].to_i
+      move_list[moves[i]][:accuracy] = (accuracies[i].to_i/100.00)
+    end
+
+    move_list
+  end
+end

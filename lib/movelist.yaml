@@ -1,0 +1,1916 @@
+---
+Absorb:
+  :type: Grass
+  :category: Special
+  :power: 20
+  :accuracy: 1.0
+Acid:
+  :type: Poison
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Acid Spray:
+  :type: Poison
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Acrobatics:
+  :type: Flying
+  :category: Physical
+  :power: 55
+  :accuracy: 1.0
+Aerial Ace:
+  :type: Flying
+  :category: Physical
+  :power: 60
+  :accuracy: 0.0
+Aeroblast:
+  :type: Flying
+  :category: Special
+  :power: 100
+  :accuracy: 0.95
+Air Cutter:
+  :type: Flying
+  :category: Special
+  :power: 55
+  :accuracy: 0.95
+Air Slash:
+  :type: Flying
+  :category: Special
+  :power: 75
+  :accuracy: 0.95
+Ancient Power:
+  :type: Rock
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Aqua Jet:
+  :type: Water
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Aqua Tail:
+  :type: Water
+  :category: Physical
+  :power: 90
+  :accuracy: 0.9
+Arm Thrust:
+  :type: Fighting
+  :category: Physical
+  :power: 15
+  :accuracy: 1.0
+Assurance:
+  :type: Dark
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Astonish:
+  :type: Ghost
+  :category: Physical
+  :power: 30
+  :accuracy: 1.0
+Attack Order:
+  :type: Bug
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Aura Sphere:
+  :type: Fighting
+  :category: Special
+  :power: 90
+  :accuracy: 0.0
+Aurora Beam:
+  :type: Ice
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Avalanche:
+  :type: Ice
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Barrage:
+  :type: Normal
+  :category: Physical
+  :power: 15
+  :accuracy: 0.85
+Beat Up:
+  :type: Dark
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Belch:
+  :type: Poison
+  :category: Special
+  :power: 120
+  :accuracy: 0.9
+Bide:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 0.0
+Bind:
+  :type: Normal
+  :category: Physical
+  :power: 15
+  :accuracy: 0.85
+Bite:
+  :type: Dark
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Blast Burn:
+  :type: Fire
+  :category: Special
+  :power: 150
+  :accuracy: 0.9
+Blaze Kick:
+  :type: Fire
+  :category: Physical
+  :power: 85
+  :accuracy: 0.9
+Blizzard:
+  :type: Ice
+  :category: Special
+  :power: 120
+  :accuracy: 0.7
+Blue Flare:
+  :type: Fire
+  :category: Special
+  :power: 130
+  :accuracy: 0.85
+Body Slam:
+  :type: Normal
+  :category: Physical
+  :power: 85
+  :accuracy: 1.0
+Bolt Strike:
+  :type: Electric
+  :category: Physical
+  :power: 130
+  :accuracy: 0.85
+Bone Club:
+  :type: Ground
+  :category: Physical
+  :power: 65
+  :accuracy: 0.85
+Bone Rush:
+  :type: Ground
+  :category: Physical
+  :power: 25
+  :accuracy: 0.9
+Bonemerang:
+  :type: Ground
+  :category: Physical
+  :power: 50
+  :accuracy: 0.9
+Boomburst:
+  :type: Normal
+  :category: Special
+  :power: 140
+  :accuracy: 1.0
+Bounce:
+  :type: Flying
+  :category: Physical
+  :power: 85
+  :accuracy: 0.85
+Brave Bird:
+  :type: Flying
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Brick Break:
+  :type: Fighting
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Brine:
+  :type: Water
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Bubble:
+  :type: Water
+  :category: Special
+  :power: 20
+  :accuracy: 1.0
+Bubble Beam:
+  :type: Water
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Bug Bite:
+  :type: Bug
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Bug Buzz:
+  :type: Bug
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Bulldoze:
+  :type: Ground
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Bullet Punch:
+  :type: Steel
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Bullet Seed:
+  :type: Grass
+  :category: Physical
+  :power: 25
+  :accuracy: 1.0
+Charge Beam:
+  :type: Electric
+  :category: Special
+  :power: 50
+  :accuracy: 0.9
+Chatter:
+  :type: Flying
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Chip Away:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Circle Throw:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 0.9
+Clamp:
+  :type: Water
+  :category: Physical
+  :power: 35
+  :accuracy: 0.85
+Clear Smog:
+  :type: Poison
+  :category: Special
+  :power: 50
+  :accuracy: 0.0
+Close Combat:
+  :type: Fighting
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Comet Punch:
+  :type: Normal
+  :category: Physical
+  :power: 18
+  :accuracy: 0.85
+Confusion:
+  :type: Psychic
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Constrict:
+  :type: Normal
+  :category: Physical
+  :power: 10
+  :accuracy: 1.0
+Counter:
+  :type: Fighting
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Covet:
+  :type: Normal
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Crabhammer:
+  :type: Water
+  :category: Physical
+  :power: 90
+  :accuracy: 0.9
+Cross Chop:
+  :type: Fighting
+  :category: Physical
+  :power: 100
+  :accuracy: 0.8
+Cross Poison:
+  :type: Poison
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Crunch:
+  :type: Dark
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Crush Claw:
+  :type: Normal
+  :category: Physical
+  :power: 75
+  :accuracy: 0.95
+Crush Grip:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Cut:
+  :type: Normal
+  :category: Physical
+  :power: 50
+  :accuracy: 0.95
+Dark Pulse:
+  :type: Dark
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Dazzling Gleam:
+  :type: Fairy
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Dig:
+  :type: Ground
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Disarming Voice:
+  :type: Fairy
+  :category: Special
+  :power: 40
+  :accuracy: 0.0
+Discharge:
+  :type: Electric
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Dive:
+  :type: Water
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Dizzy Punch:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Doom Desire:
+  :type: Steel
+  :category: Physical
+  :power: 140
+  :accuracy: 1.0
+Double Hit:
+  :type: Normal
+  :category: Physical
+  :power: 35
+  :accuracy: 0.9
+Double Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 30
+  :accuracy: 1.0
+Double-Edge:
+  :type: Normal
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Double Slap:
+  :type: Normal
+  :category: Physical
+  :power: 15
+  :accuracy: 0.85
+Draco Meteor:
+  :type: Dragon
+  :category: Special
+  :power: 140
+  :accuracy: 0.9
+Dragon Claw:
+  :type: Dragon
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Dragon Pulse:
+  :type: Dragon
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Dragon Rage:
+  :type: Dragon
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Dragon Rush:
+  :type: Dragon
+  :category: Physical
+  :power: 100
+  :accuracy: 0.75
+Dragon Tail:
+  :type: Dragon
+  :category: Physical
+  :power: 60
+  :accuracy: 0.9
+Dragon Breath:
+  :type: Dragon
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Drain Punch:
+  :type: Fighting
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Draining Kiss:
+  :type: Fairy
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Dream Eater:
+  :type: Psychic
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Drill Peck:
+  :type: Flying
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Drill Run:
+  :type: Ground
+  :category: Physical
+  :power: 80
+  :accuracy: 0.95
+Dual Chop:
+  :type: Dragon
+  :category: Physical
+  :power: 40
+  :accuracy: 0.9
+Dynamic Punch:
+  :type: Fighting
+  :category: Physical
+  :power: 100
+  :accuracy: 0.5
+Earth Power:
+  :type: Ground
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Earthquake:
+  :type: Ground
+  :category: Physical
+  :power: 100
+  :accuracy: 1.0
+Echoed Voice:
+  :type: Normal
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Egg Bomb:
+  :type: Normal
+  :category: Physical
+  :power: 100
+  :accuracy: 0.75
+Electro Ball:
+  :type: Electric
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Electroweb:
+  :type: Electric
+  :category: Special
+  :power: 55
+  :accuracy: 0.95
+Ember:
+  :type: Fire
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Endeavor:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Energy Ball:
+  :type: Grass
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Eruption:
+  :type: Fire
+  :category: Special
+  :power: 150
+  :accuracy: 1.0
+Explosion:
+  :type: Normal
+  :category: Physical
+  :power: 250
+  :accuracy: 1.0
+Extrasensory:
+  :type: Psychic
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Extreme Speed:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Facade:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Fairy Wind:
+  :type: Fairy
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Fake Out:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+False Swipe:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Feint:
+  :type: Normal
+  :category: Physical
+  :power: 30
+  :accuracy: 1.0
+Feint Attack:
+  :type: Dark
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Fell Stinger:
+  :type: Bug
+  :category: Physical
+  :power: 30
+  :accuracy: 1.0
+Fiery Dance:
+  :type: Fire
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Final Gambit:
+  :type: Fighting
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Fire Blast:
+  :type: Fire
+  :category: Special
+  :power: 120
+  :accuracy: 0.85
+Fire Fang:
+  :type: Fire
+  :category: Physical
+  :power: 65
+  :accuracy: 0.95
+Fire Pledge:
+  :type: Fire
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Fire Punch:
+  :type: Fire
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Fire Spin:
+  :type: Fire
+  :category: Special
+  :power: 35
+  :accuracy: 0.85
+Flail:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Flame Burst:
+  :type: Fire
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Flame Charge:
+  :type: Fire
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Flame Wheel:
+  :type: Fire
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Flamethrower:
+  :type: Fire
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Flare Blitz:
+  :type: Fire
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Flash Cannon:
+  :type: Steel
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Fling:
+  :type: Dark
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Fly:
+  :type: Flying
+  :category: Physical
+  :power: 90
+  :accuracy: 0.95
+Flying Press:
+  :type: Fighting
+  :category: Physical
+  :power: 80
+  :accuracy: 0.95
+Focus Blast:
+  :type: Fighting
+  :category: Special
+  :power: 120
+  :accuracy: 0.7
+Focus Punch:
+  :type: Fighting
+  :category: Physical
+  :power: 150
+  :accuracy: 1.0
+Force Palm:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Foul Play:
+  :type: Dark
+  :category: Physical
+  :power: 95
+  :accuracy: 1.0
+Freeze-Dry:
+  :type: Ice
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Freeze Shock:
+  :type: Ice
+  :category: Physical
+  :power: 140
+  :accuracy: 0.9
+Frenzy Plant:
+  :type: Grass
+  :category: Special
+  :power: 150
+  :accuracy: 0.9
+Frost Breath:
+  :type: Ice
+  :category: Special
+  :power: 40
+  :accuracy: 0.9
+Frustration:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Fury Attack:
+  :type: Normal
+  :category: Physical
+  :power: 15
+  :accuracy: 0.85
+Fury Cutter:
+  :type: Bug
+  :category: Physical
+  :power: 20
+  :accuracy: 0.95
+Fury Swipes:
+  :type: Normal
+  :category: Physical
+  :power: 18
+  :accuracy: 0.8
+Fusion Bolt:
+  :type: Electric
+  :category: Physical
+  :power: 100
+  :accuracy: 1.0
+Fusion Flare:
+  :type: Fire
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Future Sight:
+  :type: Psychic
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Gear Grind:
+  :type: Steel
+  :category: Physical
+  :power: 50
+  :accuracy: 0.85
+Giga Drain:
+  :type: Grass
+  :category: Special
+  :power: 75
+  :accuracy: 1.0
+Giga Impact:
+  :type: Normal
+  :category: Physical
+  :power: 150
+  :accuracy: 0.9
+Glaciate:
+  :type: Ice
+  :category: Special
+  :power: 65
+  :accuracy: 0.95
+Grass Knot:
+  :type: Grass
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Grass Pledge:
+  :type: Grass
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Gunk Shot:
+  :type: Poison
+  :category: Physical
+  :power: 120
+  :accuracy: 0.7
+Gust:
+  :type: Flying
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Gyro Ball:
+  :type: Steel
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Hammer Arm:
+  :type: Fighting
+  :category: Physical
+  :power: 100
+  :accuracy: 0.9
+Head Charge:
+  :type: Normal
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Head Smash:
+  :type: Rock
+  :category: Physical
+  :power: 150
+  :accuracy: 0.8
+Headbutt:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Heart Stamp:
+  :type: Psychic
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Heat Crash:
+  :type: Fire
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Heat Wave:
+  :type: Fire
+  :category: Special
+  :power: 100
+  :accuracy: 0.9
+Heavy Slam:
+  :type: Steel
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Hex:
+  :type: Ghost
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+High Jump Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 130
+  :accuracy: 0.9
+Hidden Power:
+  :type: Normal
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Horn Attack:
+  :type: Normal
+  :category: Physical
+  :power: 65
+  :accuracy: 1.0
+Horn Leech:
+  :type: Grass
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Hurricane:
+  :type: Flying
+  :category: Special
+  :power: 120
+  :accuracy: 0.7
+Hydro Cannon:
+  :type: Water
+  :category: Special
+  :power: 150
+  :accuracy: 0.9
+Hydro Pump:
+  :type: Water
+  :category: Special
+  :power: 120
+  :accuracy: 0.8
+Hyper Beam:
+  :type: Normal
+  :category: Special
+  :power: 150
+  :accuracy: 0.9
+Hyper Fang:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 0.9
+Hyper Voice:
+  :type: Normal
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Ice Ball:
+  :type: Ice
+  :category: Physical
+  :power: 30
+  :accuracy: 0.9
+Ice Beam:
+  :type: Ice
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Ice Burn:
+  :type: Ice
+  :category: Special
+  :power: 140
+  :accuracy: 0.9
+Ice Fang:
+  :type: Ice
+  :category: Physical
+  :power: 65
+  :accuracy: 0.95
+Ice Punch:
+  :type: Ice
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Ice Shard:
+  :type: Ice
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Icicle Crash:
+  :type: Ice
+  :category: Physical
+  :power: 85
+  :accuracy: 0.9
+Icicle Spear:
+  :type: Ice
+  :category: Physical
+  :power: 25
+  :accuracy: 1.0
+Icy Wind:
+  :type: Ice
+  :category: Special
+  :power: 55
+  :accuracy: 0.95
+Incinerate:
+  :type: Fire
+  :category: Special
+  :power: 30
+  :accuracy: 1.0
+Inferno:
+  :type: Fire
+  :category: Special
+  :power: 100
+  :accuracy: 0.5
+Infestation:
+  :type: Bug
+  :category: Special
+  :power: 20
+  :accuracy: 1.0
+Iron Head:
+  :type: Steel
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Iron Tail:
+  :type: Steel
+  :category: Physical
+  :power: 100
+  :accuracy: 0.75
+Judgment:
+  :type: Normal
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Jump Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 100
+  :accuracy: 0.95
+Karate Chop:
+  :type: Fighting
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Knock Off:
+  :type: Dark
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Land's Wrath:
+  :type: Ground
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Last Resort:
+  :type: Normal
+  :category: Physical
+  :power: 140
+  :accuracy: 1.0
+Lava Plume:
+  :type: Fire
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Leaf Blade:
+  :type: Grass
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Leaf Storm:
+  :type: Grass
+  :category: Special
+  :power: 140
+  :accuracy: 0.9
+Leaf Tornado:
+  :type: Grass
+  :category: Special
+  :power: 65
+  :accuracy: 0.9
+Leech Life:
+  :type: Bug
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Lick:
+  :type: Ghost
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Low Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Low Sweep:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Luster Purge:
+  :type: Psychic
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Mach Punch:
+  :type: Fighting
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Magical Leaf:
+  :type: Grass
+  :category: Special
+  :power: 60
+  :accuracy: 0.0
+Magma Storm:
+  :type: Fire
+  :category: Special
+  :power: 120
+  :accuracy: 0.75
+Magnet Bomb:
+  :type: Steel
+  :category: Physical
+  :power: 60
+  :accuracy: 0.0
+Magnitude:
+  :type: Ground
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Me First:
+  :type: Normal
+  :category: Status
+  :power: 0
+  :accuracy: 0.0
+Mega Drain:
+  :type: Grass
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Mega Kick:
+  :type: Normal
+  :category: Physical
+  :power: 120
+  :accuracy: 0.75
+Mega Punch:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 0.85
+Megahorn:
+  :type: Bug
+  :category: Physical
+  :power: 120
+  :accuracy: 0.85
+Metal Burst:
+  :type: Steel
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Metal Claw:
+  :type: Steel
+  :category: Physical
+  :power: 50
+  :accuracy: 0.95
+Meteor Mash:
+  :type: Steel
+  :category: Physical
+  :power: 100
+  :accuracy: 0.85
+Mirror Coat:
+  :type: Psychic
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Mirror Shot:
+  :type: Steel
+  :category: Special
+  :power: 65
+  :accuracy: 0.85
+Mist Ball:
+  :type: Psychic
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Moonblast:
+  :type: Fairy
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Mud Bomb:
+  :type: Ground
+  :category: Special
+  :power: 65
+  :accuracy: 0.85
+Mud Shot:
+  :type: Ground
+  :category: Special
+  :power: 55
+  :accuracy: 0.95
+Mud-Slap:
+  :type: Ground
+  :category: Special
+  :power: 20
+  :accuracy: 1.0
+Muddy Water:
+  :type: Water
+  :category: Special
+  :power: 95
+  :accuracy: 0.85
+Mystical Fire:
+  :type: Fire
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Natural Gift:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Nature Power:
+  :type: Normal
+  :category: Status
+  :power: 0
+  :accuracy: 0.0
+Needle Arm:
+  :type: Grass
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Night Daze:
+  :type: Dark
+  :category: Special
+  :power: 85
+  :accuracy: 0.95
+Night Shade:
+  :type: Ghost
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Night Slash:
+  :type: Dark
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Nuzzle:
+  :type: Electric
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Oblivion Wing:
+  :type: Flying
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Octazooka:
+  :type: Water
+  :category: Special
+  :power: 65
+  :accuracy: 0.85
+Ominous Wind:
+  :type: Ghost
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Outrage:
+  :type: Dragon
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Overheat:
+  :type: Fire
+  :category: Special
+  :power: 140
+  :accuracy: 0.9
+Parabolic Charge:
+  :type: Electric
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Pay Day:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Payback:
+  :type: Dark
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Peck:
+  :type: Flying
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Petal Blizzard:
+  :type: Grass
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Petal Dance:
+  :type: Grass
+  :category: Special
+  :power: 120
+  :accuracy: 1.0
+Phantom Force:
+  :type: Ghost
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Pin Missile:
+  :type: Bug
+  :category: Physical
+  :power: 14
+  :accuracy: 0.85
+Play Rough:
+  :type: Fairy
+  :category: Physical
+  :power: 90
+  :accuracy: 0.9
+Pluck:
+  :type: Flying
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Poison Fang:
+  :type: Poison
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Poison Jab:
+  :type: Poison
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Poison Sting:
+  :type: Poison
+  :category: Physical
+  :power: 15
+  :accuracy: 1.0
+Poison Tail:
+  :type: Poison
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Pound:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Powder Snow:
+  :type: Ice
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Power Gem:
+  :type: Rock
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Power-Up Punch:
+  :type: Fighting
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Power Whip:
+  :type: Grass
+  :category: Physical
+  :power: 120
+  :accuracy: 0.85
+Present:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 0.9
+Psybeam:
+  :type: Psychic
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Psychic:
+  :type: Psychic
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Psycho Boost:
+  :type: Psychic
+  :category: Special
+  :power: 140
+  :accuracy: 0.9
+Psycho Cut:
+  :type: Psychic
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Psyshock:
+  :type: Psychic
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Psystrike:
+  :type: Psychic
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Psywave:
+  :type: Psychic
+  :category: Special
+  :power: 0
+  :accuracy: 0.8
+Punishment:
+  :type: Dark
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Pursuit:
+  :type: Dark
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Quick Attack:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Rage:
+  :type: Normal
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Rapid Spin:
+  :type: Normal
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Razor Leaf:
+  :type: Grass
+  :category: Physical
+  :power: 55
+  :accuracy: 0.95
+Razor Shell:
+  :type: Water
+  :category: Physical
+  :power: 75
+  :accuracy: 0.95
+Razor Wind:
+  :type: Normal
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Relic Song:
+  :type: Normal
+  :category: Special
+  :power: 75
+  :accuracy: 1.0
+Retaliate:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Return:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Revenge:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Roar of Time:
+  :type: Dragon
+  :category: Special
+  :power: 150
+  :accuracy: 0.9
+Rock Blast:
+  :type: Rock
+  :category: Physical
+  :power: 25
+  :accuracy: 0.9
+Rock Climb:
+  :type: Normal
+  :category: Physical
+  :power: 90
+  :accuracy: 0.85
+Rock Slide:
+  :type: Rock
+  :category: Physical
+  :power: 75
+  :accuracy: 0.9
+Rock Smash:
+  :type: Fighting
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Rock Throw:
+  :type: Rock
+  :category: Physical
+  :power: 50
+  :accuracy: 0.9
+Rock Tomb:
+  :type: Rock
+  :category: Physical
+  :power: 50
+  :accuracy: 0.8
+Rock Wrecker:
+  :type: Rock
+  :category: Physical
+  :power: 150
+  :accuracy: 0.9
+Rolling Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 0.85
+Rollout:
+  :type: Rock
+  :category: Physical
+  :power: 30
+  :accuracy: 0.9
+Round:
+  :type: Normal
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Sacred Fire:
+  :type: Fire
+  :category: Special
+  :power: 100
+  :accuracy: 0.95
+Sacred Sword:
+  :type: Fighting
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Sand Tomb:
+  :type: Ground
+  :category: Physical
+  :power: 35
+  :accuracy: 0.85
+Scald:
+  :type: Water
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Scratch:
+  :type: Normal
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Searing Shot:
+  :type: Fire
+  :category: Special
+  :power: 100
+  :accuracy: 1.0
+Secret Power:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Secret Sword:
+  :type: Fighting
+  :category: Special
+  :power: 85
+  :accuracy: 1.0
+Seed Bomb:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Seed Flare:
+  :type: Grass
+  :category: Special
+  :power: 120
+  :accuracy: 0.85
+Seismic Toss:
+  :type: Fighting
+  :category: Physical
+  :power: 0
+  :accuracy: 1.0
+Self-Destruct:
+  :type: Normal
+  :category: Physical
+  :power: 200
+  :accuracy: 1.0
+Shadow Ball:
+  :type: Ghost
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Shadow Claw:
+  :type: Ghost
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Shadow Force:
+  :type: Ghost
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Shadow Punch:
+  :type: Ghost
+  :category: Physical
+  :power: 60
+  :accuracy: 0.0
+Shadow Sneak:
+  :type: Ghost
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Shock Wave:
+  :type: Electric
+  :category: Special
+  :power: 60
+  :accuracy: 0.0
+Signal Beam:
+  :type: Bug
+  :category: Special
+  :power: 75
+  :accuracy: 1.0
+Silver Wind:
+  :type: Bug
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Skull Bash:
+  :type: Normal
+  :category: Physical
+  :power: 100
+  :accuracy: 1.0
+Sky Attack:
+  :type: Flying
+  :category: Physical
+  :power: 140
+  :accuracy: 0.9
+Sky Drop:
+  :type: Flying
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Sky Uppercut:
+  :type: Fighting
+  :category: Physical
+  :power: 85
+  :accuracy: 0.9
+Slam:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 0.75
+Slash:
+  :type: Normal
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Sleep Talk:
+  :type: Normal
+  :category: Status
+  :power: 0
+  :accuracy: 0.0
+Sludge:
+  :type: Poison
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Sludge Bomb:
+  :type: Poison
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+Sludge Wave:
+  :type: Poison
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Smack Down:
+  :type: Rock
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Smelling Salts:
+  :type: Normal
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Smog:
+  :type: Poison
+  :category: Special
+  :power: 40
+  :accuracy: 0.7
+Snarl:
+  :type: Dark
+  :category: Special
+  :power: 55
+  :accuracy: 0.95
+Snore:
+  :type: Normal
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Solar Beam:
+  :type: Grass
+  :category: Special
+  :power: 120
+  :accuracy: 1.0
+Sonic Boom:
+  :type: Normal
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Spacial Rend:
+  :type: Dragon
+  :category: Special
+  :power: 100
+  :accuracy: 0.95
+Spark:
+  :type: Electric
+  :category: Physical
+  :power: 65
+  :accuracy: 1.0
+Spike Cannon:
+  :type: Normal
+  :category: Physical
+  :power: 20
+  :accuracy: 1.0
+Spit Up:
+  :type: Normal
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+Steamroller:
+  :type: Bug
+  :category: Physical
+  :power: 65
+  :accuracy: 1.0
+Steel Wing:
+  :type: Steel
+  :category: Physical
+  :power: 70
+  :accuracy: 0.9
+Stomp:
+  :type: Normal
+  :category: Physical
+  :power: 65
+  :accuracy: 1.0
+Stone Edge:
+  :type: Rock
+  :category: Physical
+  :power: 100
+  :accuracy: 0.8
+Stored Power:
+  :type: Psychic
+  :category: Special
+  :power: 20
+  :accuracy: 1.0
+Storm Throw:
+  :type: Fighting
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Strength:
+  :type: Normal
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Struggle:
+  :type: Normal
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Struggle Bug:
+  :type: Bug
+  :category: Special
+  :power: 30
+  :accuracy: 1.0
+Submission:
+  :type: Fighting
+  :category: Physical
+  :power: 80
+  :accuracy: 0.8
+Sucker Punch:
+  :type: Dark
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Super Fang:
+  :type: Normal
+  :category: Physical
+  :power: 0
+  :accuracy: 0.9
+Superpower:
+  :type: Fighting
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Surf:
+  :type: Water
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Swift:
+  :type: Normal
+  :category: Special
+  :power: 60
+  :accuracy: 0.0
+Synchronoise:
+  :type: Psychic
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Tackle:
+  :type: Normal
+  :category: Physical
+  :power: 50
+  :accuracy: 1.0
+Tail Slap:
+  :type: Normal
+  :category: Physical
+  :power: 25
+  :accuracy: 0.85
+Take Down:
+  :type: Normal
+  :category: Physical
+  :power: 90
+  :accuracy: 0.85
+Techno Blast:
+  :type: Normal
+  :category: Special
+  :power: 85
+  :accuracy: 1.0
+Thief:
+  :type: Dark
+  :category: Physical
+  :power: 40
+  :accuracy: 1.0
+Thrash:
+  :type: Normal
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Thunder:
+  :type: Electric
+  :category: Special
+  :power: 120
+  :accuracy: 0.7
+Thunder Fang:
+  :type: Electric
+  :category: Physical
+  :power: 65
+  :accuracy: 0.95
+Thunder Punch:
+  :type: Electric
+  :category: Physical
+  :power: 75
+  :accuracy: 1.0
+Thunder Shock:
+  :type: Electric
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Thunderbolt:
+  :type: Electric
+  :category: Special
+  :power: 95
+  :accuracy: 1.0
+Tri Attack:
+  :type: Normal
+  :category: Special
+  :power: 80
+  :accuracy: 1.0
+Triple Kick:
+  :type: Fighting
+  :category: Physical
+  :power: 10
+  :accuracy: 0.9
+Trump Card:
+  :type: Normal
+  :category: Special
+  :power: 0
+  :accuracy: 0.0
+Twineedle:
+  :type: Bug
+  :category: Physical
+  :power: 25
+  :accuracy: 1.0
+Twister:
+  :type: Dragon
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+U-turn:
+  :type: Bug
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Uproar:
+  :type: Normal
+  :category: Special
+  :power: 90
+  :accuracy: 1.0
+V-create:
+  :type: Fire
+  :category: Physical
+  :power: 180
+  :accuracy: 0.95
+Vacuum Wave:
+  :type: Fighting
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Venoshock:
+  :type: Poison
+  :category: Special
+  :power: 65
+  :accuracy: 1.0
+Vice Grip:
+  :type: Normal
+  :category: Physical
+  :power: 55
+  :accuracy: 1.0
+Vine Whip:
+  :type: Grass
+  :category: Physical
+  :power: 35
+  :accuracy: 1.0
+Vital Throw:
+  :type: Fighting
+  :category: Physical
+  :power: 70
+  :accuracy: 1.0
+Volt Switch:
+  :type: Electric
+  :category: Special
+  :power: 70
+  :accuracy: 1.0
+Volt Tackle:
+  :type: Electric
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Wake-Up Slap:
+  :type: Fighting
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Water Gun:
+  :type: Water
+  :category: Special
+  :power: 40
+  :accuracy: 1.0
+Water Pledge:
+  :type: Water
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Water Pulse:
+  :type: Water
+  :category: Special
+  :power: 60
+  :accuracy: 1.0
+Water Shuriken:
+  :type: Water
+  :category: Physical
+  :power: 15
+  :accuracy: 1.0
+Water Spout:
+  :type: Water
+  :category: Special
+  :power: 150
+  :accuracy: 1.0
+Waterfall:
+  :type: Water
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Weather Ball:
+  :type: Normal
+  :category: Special
+  :power: 50
+  :accuracy: 1.0
+Whirlpool:
+  :type: Water
+  :category: Special
+  :power: 35
+  :accuracy: 0.85
+Wild Charge:
+  :type: Electric
+  :category: Physical
+  :power: 90
+  :accuracy: 1.0
+Wing Attack:
+  :type: Flying
+  :category: Physical
+  :power: 60
+  :accuracy: 1.0
+Wood Hammer:
+  :type: Grass
+  :category: Physical
+  :power: 120
+  :accuracy: 1.0
+Wrap:
+  :type: Normal
+  :category: Physical
+  :power: 15
+  :accuracy: 0.9
+Wring Out:
+  :type: Normal
+  :category: Special
+  :power: 0
+  :accuracy: 1.0
+X-Scissor:
+  :type: Bug
+  :category: Physical
+  :power: 80
+  :accuracy: 1.0
+Zap Cannon:
+  :type: Electric
+  :category: Special
+  :power: 120
+  :accuracy: 0.5
+Zen Headbutt:
+  :type: Psychic
+  :category: Physical
+  :power: 80
+  :accuracy: 0.9
