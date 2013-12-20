@@ -1,0 +1,33 @@
+So tonight I'm going to take you back to the '90s...
+...because recently I've been working on a small browser-based recreation of Pokemon.
+
+My talk is about how you can use web scraping for fun and profit.
+
+What is web scraping?
+It's basically pulling data straight from the HTML (or XML) of any website that is available on the internet.
+
+For this Pokemon app I need to select randomly from the 718 available Pokemon in the current franchise.
+Each Pokemon has base stats, evolution levels, learnsets, types, and so on.
+
+So rather than copying and pasting all the data from Bulbapedia, which is the Pokemon wikipedia:
+I used a gem called Nokogiri to scrape all the URLs of each Pokemon from a page that lists all 718 types.
+Then I wrote a program to visit each one of the individual sites and scrape them for information and graphics.
+
+Nokogiri is a great web scraping gem for Ruby. It allows you to use xPath and CSS selectors.
+
+You can also use Mechanize, which is a gem that helps you to interact with the site while you're scraping, like filling in forms and clicking buttons.
+
+So you might be asking yourself, why not just use an API?
+
+Not all sites have a public or accessible API. Bulbapedia's API doesn't allow you to search for Pokemon.
+
+Also, not all APIs are good or easy to use.
+
+Other examples of uses for web scraping are:
+buying items from retail sites
+getting real estate listings
+searching the net for information about yourself
+collecting information on job postings and internships
+important information about pokemon
+
+As a quick side note, I'm using AJAX to asynchronously reload content in different containers within the browser, without reloading the whole page. It's really cool, and I'm sure many of you are well acquainted with it. But if you aren't, you should check it out! I'm just getting started learning how to use it. There's a jQuery AJAX library, which I'm using right now, that makes using AJAX a lot easier and you should check that out too.

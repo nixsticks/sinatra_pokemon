@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>WEB SCRAPING FOR FUN AND PROFIT</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/hash/deck.hash.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container with-asides">
+  <section class="slide">
+    <h1>WEB SCRAPING FOR FUN AND PROFIT</h1>
+  </section>
+
+    <section class="slide">
+    <h2>POKEMON</h2>
+    <h4>There are 718 species of Pokemon in the current franchise.<br><br>
+      Each has base stats, a type or types, evolution levels, and learnsets (moves it can learn).<br><br>
+      Each move has a type, category, power, and accuracy.<br><br>
+    How can I avoid copying all this data by hand?</h4>
+  </section>
+
+  <section class="slide">
+    <h2>WEB SCRAPING</h2>
+    <ol>
+      <li>
+        <h3>What is it?</h3>
+        <p>Programmatically pulling data straight out of HTML from any webpage that can be accessed on the internet.</p>
+      </li>
+      <li>
+        <h3>But can't I just use an API?</h3>
+        <p>Not all websites have public or official APIs. Example: Bulbapedia!</p>
+        <p>Not all APIs are good and/or easy to use.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="slide">
+    <h2>USES</h2>
+    <ul>
+      <li>buying stuff online</li>
+      <li>real estate properties</li>
+      <li>job postings and internships</li>
+      <li>googling yourself</li>
+      <li>collecting data from government sites</li>
+      <li>important information about pokemon</li>
+      <li>ANYTHING!</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>NOKOGIRI(鋸)</h2>
+    <ol>
+      <li>
+        <h3>What is it?</h3>
+        <p>HTML, XML, SAX, and Reader parser that allows you to search HTML.</p>
+      </li>
+      <li>
+        <h3>Why use it?</h3>
+        <p>It's free.</p>
+        <p>It's powerful and easy to use.</p>
+        <p>It allows you to search with CSS and XPath selectors.</p>
+      </li>
+    </ol>
+  </section>
+
+  <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+  <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+  <p class="deck-status">
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
+  </p>
+
+  <form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+  </form>
+
+  <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>

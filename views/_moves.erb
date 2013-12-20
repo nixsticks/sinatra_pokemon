@@ -1,0 +1,68 @@
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$("#move").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            //data: return data from server
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            //if fails      
+        }
+    });
+    e.preventDefault(); //STOP default action
+
+    function loadNext() {
+    $("#intro").html("
+        <h2><%= @trainer.my_pokemon[0].name %> used <%= params["0"] %></h2>
+      ");
+    loadNext();
+});
+ 
+$("#move").submit();
+</script>
+</head>
+
+<div class="move-container">
+  <div class="two columns">
+    <p> </p>
+  </div>
+
+  <div class="three columns">
+    <% @trainer.my_pokemon[0].moves.each do |move| %>
+      <% if @trainer.my_pokemon[0].moves.index(move) <= 3 %>
+        <form name="move" id="move" action="/move" method="POST">
+          <input type="hidden" name="0" value="<%= move %>"><button type="submit" value="submit"><%= move %></button>
+        </form>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="six columns">
+    <p> </p>
+  </div>
+
+  <div class="three columns">
+    <% @opponent.moves.each do |move| %>
+      <% if @opponent.moves.index(move) <= 3 %>
+        <form name="move" id="move" action="/move" method="POST">
+          <input type="hidden" name="0" value="<%= move %>"><button type="submit" value="submit"><%= move %></button>
+        </form>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="two columns">
+    <p> </p>
+  </div>
+</div>

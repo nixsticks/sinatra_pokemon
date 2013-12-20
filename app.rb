@@ -1,3 +1,4 @@
+require 'rack/session/moneta'
 require 'yaml'
 require 'bundler'
 Bundler.require
@@ -7,11 +8,14 @@ require_relative './lib/pokemon'
 
 module PokemonGame
   class App < Sinatra::Application
-    enable :sessions
+    use Rack::Session::Moneta, :store => Moneta.new(:Memory, :expires => true)
 
-    set :session_secret, 'super secret'
     set :pokemon, YAML::load(File.open('./lib/pokedex.yaml'))
     set :starters, ["Bulbasaur", "Squirtle", "Charmander"]
+
+    get '/presentation' do
+      erb :presentation, :layout => false
+    end
 
     get '/' do
       session[:line] = 0
@@ -89,7 +93,15 @@ module PokemonGame
     get '/first_fight' do
       @trainer = session[:trainer]
       @opponent = session[:opponent]
+      @inner = "fight_inner"
       erb :fight
+    end
+
+    get '/fight_inner' do
+      
+    end
+
+    post '/move' do
     end
 
     helpers do
