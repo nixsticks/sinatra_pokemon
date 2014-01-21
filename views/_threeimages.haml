@@ -1,0 +1,6 @@
+.image-container
+  .thirteen.columns
+    .row
+      - 3.times do |i|
+        .four.columns
+          %img{class: "pokemon", src: "/images/#{@images[i]}.png"}

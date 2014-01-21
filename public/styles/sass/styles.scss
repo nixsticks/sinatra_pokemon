@@ -1,3 +1,5 @@
+$image-height: 300px;
+
 h2 {
   text-align: center;
 }
@@ -6,18 +8,18 @@ h2 {
   text-align: right;
 }
 
-#text {
+#intro {
   min-height: 60px;
   text-align: center;
 }
 
-.text-container,
+.intro-container,
 .image-container {
   overflow: auto;
   width: 100%;
 }
 
-.text-container {
+.intro-container {
   margin-top: 100px;
 }
 
@@ -35,10 +37,6 @@ h2 {
   text-align: center;
   height: 300px;
   width: auto;
-}
-
-.hidden {
-  display: none;
 }
 
 .button,

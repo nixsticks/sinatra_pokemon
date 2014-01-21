@@ -1,0 +1,8 @@
+.text-container
+  - if @line
+    .text.twelve.columns.offset-by-two
+      %h2= @line
+  - else
+    - @lines.each do |line|
+      .text.twelve.columns.offset-by-two.hidden
+        %h2= line

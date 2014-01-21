@@ -1,0 +1,8 @@
+= simple_partial :_text
+
+.image-container
+  .row
+    .five.columns.offset-by-one
+      %img{class: "pokemon", src: "/images/#{@opponent.name}.png"}
+    .five.columns.offset-by-four
+      %img{class: "pokemon", src: "/images/#{@trainer.my_pokemon[0].name}.png"}

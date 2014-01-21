@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title GOTTA CATCH 'EM ALL!
+    %link{rel: 'stylesheet', type: 'text/css', href: '/styles/base.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/styles/layout.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/styles/skeleton.css'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/styles/custom.css'}
+    %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'}
+  %body
+    .container
+      = yield
+      %script{src: 'javascript/application.js'}
